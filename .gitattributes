@@ -1,0 +1,20 @@
+# Default: normalize line endings for all text files.
+* text=auto
+
+# Explicitly treat these as text so they get normalized consistently.
+*.cs             text
+*.csproj         text
+*.md             text
+*.json           text
+*.xml            text
+.gitignore       text
+.gitattributes   text
+
+# These are binary — never normalize or diff them as text.
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ico    binary
+*.exe    binary
+*.dll    binary
