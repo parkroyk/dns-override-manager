@@ -1,0 +1,13 @@
+# .NET build output
+bin/
+obj/
+dist/
+
+# Visual Studio / Rider
+.vs/
+*.user
+
+# Local tooling & OS artifacts
+.qwen/
+Thumbs.db
+Desktop.ini

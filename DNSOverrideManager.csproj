@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>DNSOverrideManager</RootNamespace>
+    <AssemblyName>DNSOverrideManager</AssemblyName>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <Version>1.0.0</Version>
+    <Authors>DNS Override Manager</Authors>
+    <Product>DNS Override Manager</Product>
+    <Description>A Windows system-tray app that overrides the active DNS servers with a configurable alternate pair, then restores the original settings.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- WMI access for Win32_NetworkAdapterConfiguration (DNS backup / apply / restore) -->
+    <PackageReference Include="System.Management" Version="9.0.0" />
+  </ItemGroup>
+
+</Project>
